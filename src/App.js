@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p style={{ color: 'pink', 'font-weight': 'bold' }}>
+          So, let`s learn some React stuff:3
         </p>
         <a
           className="App-link"
@@ -17,9 +16,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
     </div>
   );
-}
+};
+
 
 export default App;
