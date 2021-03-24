@@ -1,8 +1,9 @@
 import * as React from "react";
 import forest from "../content/forest.jpg";
+import styles from "./Profile.module.css";
 
 export const Profile = () => (
-  <div className="content">
+  <div className={styles.content}>
     <div>
       <img src={forest} alt={"forest"} />
     </div>
