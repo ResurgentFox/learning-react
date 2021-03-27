@@ -34,6 +34,7 @@
 
 .text {
     border-radius: 20px;
+    padding: 10px;
 }
 
 .container {
@@ -41,8 +42,16 @@
     flex-direction: column;
 }
 .flex {
+    width: 420px;
     display: flex;
+    justify-content: end;
 }
 .like {
-    justify-content: end;
+    background-color: pink;
+    color: #6c6c6c;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 700;
 }
