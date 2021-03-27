@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./Post.module.css";
+import emoji from "./emoji/emoji.png";
 
 export const Post = () => (
   <div className={styles.wrapper}>
@@ -13,6 +14,7 @@ export const Post = () => (
     </div>
     <div className={styles.flex}>
       <div className={styles.like}>Like</div>
+      <img className={styles.emoji} alt={"emoji"} src={emoji}></img>
     </div>
   </div>
 );
