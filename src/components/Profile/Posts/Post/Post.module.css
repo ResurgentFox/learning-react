@@ -1,66 +1,3 @@
-/* .post {
-    font-size: 30px;
-    color: #6c6c6c;
-    font-weight: 700;
-    display: flex;
-    margin: 20px;
-}
-
-.title {
-    margin-left: 30px;
-    font-weight: 800;
-    font-size: 24px;
-}
-.avatar {
-    margin: 10px;
-    width: 60px;
-    height: 60px;
-    background-color: #6c6c6c;
-    border-radius: 50%;
-}
-
-.button {
-    width: 100px;
-    height: 30px;
-    margin-top: 25px;
-    margin-left: 15px;
-    border-radius: 10px;
-    color: #fff;
-    background-color: #000;
-    font-size: 16px;
-    font-weight: 900;  
-    border: none;
-}
-
-.text {
-    border-radius: 20px;
-    padding: 10px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-}
-.flex {
-    width: 450px;
-    display: flex;
-    justify-content: end;
-}
-.like {
-    background-color: pink;
-    color: #6c6c6c;
-    width: 50px;
-    height: 25px;
-    border-radius: 15px;
-    text-align: center;
-    font-weight: 700;
-}
-.emoji {
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
-} */
-
 .ava {
     margin: 10px;
     width: 60px;
@@ -72,15 +9,16 @@
 .container {
     margin-left: 20px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
 }
 
 .flex {
     width: 450px;
-    display: flex; 
+    display: flex;
     justify-content: end;
 }
+
 .like {
     margin-left: 5px;
     background-color: pink;
@@ -95,7 +33,7 @@
 .reply {
     margin-left: 10px;
     background-color: #6c6c6c;
-    border-radius: 15px;    
+    border-radius: 15px;
     width: 80px;
     height: 25px;
     text-align: center;

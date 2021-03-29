@@ -15,7 +15,6 @@ export const Posts = () => (
     </div>
 
     <div className={styles.flex}>
-      {/* <div className={styles.like}>Like</div> */}
       <img className={styles.emoji} alt={"emoji"} src={emoji}></img>
     </div>
 
