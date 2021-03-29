@@ -1,4 +1,4 @@
-.post {
+/* .post {
     font-size: 30px;
     color: #6c6c6c;
     font-weight: 700;
@@ -59,4 +59,46 @@
     width: 25px;
     height: 25px;
     margin-left: 10px;
+} */
+
+.ava {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #6c6c6c;
+    border-radius: 50%;
+}
+
+.container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.flex {
+    width: 450px;
+    display: flex; 
+    justify-content: end;
+}
+.like {
+    margin-left: 5px;
+    background-color: pink;
+    color: #6c6c6c;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.reply {
+    margin-left: 10px;
+    background-color: #6c6c6c;
+    border-radius: 15px;    
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
 }
