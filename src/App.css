@@ -8,12 +8,6 @@
   color: white;
 } */
 
-/* body{
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-} */
-
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,14 +29,6 @@ body {
   grid-template-columns: 2fr 12fr;
   grid-gap: 10px;
 }
-
-/* .header img{
-  max-width: 100%;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin: 15px;
-} */
 
 .app-wrapper-content {
   grid-area: c;

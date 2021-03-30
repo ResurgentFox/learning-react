@@ -4,20 +4,20 @@ import styles from "./Navbar.module.css";
 
 export const Navbar = () => (
   <nav className={styles.nav}>
-    <div>
-      <NavLink to="/profile">Profile</NavLink>
+    <div className={styles.item}>
+      <NavLink to="/profile" activeClassName={styles.activeLink}>Profile</NavLink>
     </div>
-    <div>
-      <NavLink to="/dialogs">Messages</NavLink>
+    <div className={styles.item}>
+      <NavLink to="/dialogs" activeClassName={styles.activeLink}>Messages</NavLink>
     </div>
-    <div>
-      <NavLink to="/news">News</NavLink>
+    <div className={styles.item}>
+      <NavLink to="/news" activeClassName={styles.activeLink}>News</NavLink>
     </div>
-    <div>
-      <NavLink to="/music">Music</NavLink>
+    <div className={styles.item}>
+      <NavLink to="/music" activeClassName={styles.activeLink}>Music</NavLink>
     </div>
-    <div>
-      <NavLink to="/settings">Settings</NavLink>
+    <div className={styles.item}>
+      <NavLink to="/settings" activeClassName={styles.activeLink}>Settings</NavLink>
     </div>
   </nav>
 );

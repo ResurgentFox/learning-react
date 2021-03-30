@@ -6,7 +6,7 @@
   height: 1100px;
 }
 
-.nav a {
+.item a {
   display: inline-block;
   margin-top: 10px;
   color: #fff;
@@ -14,4 +14,9 @@
   font-size: 24px;
   margin-left: 20px;
   font-weight: 600;
+}
+
+.item a.activeLink {
+  color: #580ead;
+  text-shadow: 1px 1px #3914b0;
 }
