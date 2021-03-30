@@ -43,3 +43,8 @@ body {
   border-radius: 50%;
   margin: 15px;
 } */
+
+.app-wrapper-content {
+  grid-area: c;
+  background-color: #fff;
+}

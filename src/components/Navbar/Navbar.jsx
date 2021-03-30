@@ -4,19 +4,19 @@ import styles from "./Navbar.module.css";
 export const Navbar = () => (
   <nav className={styles.nav}>
     <div>
-      <a href="key">Profile</a>
+      <a href="/profile">Profile</a>
     </div>
     <div>
-      <a href="key">Friends</a>
+      <a href="/dialogs">Messages</a>
     </div>
     <div>
-      <a href="key">Messages</a>
+      <a href="/news">News</a>
     </div>
     <div>
-      <a href="key">News</a>
+      <a href="/music">Music</a>
     </div>
     <div>
-      <a href="key">Settings</a>
+      <a href="/settings">Settings</a>
     </div>
   </nav>
 );
