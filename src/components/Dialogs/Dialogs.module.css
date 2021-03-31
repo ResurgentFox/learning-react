@@ -1,0 +1,31 @@
+.contacts {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.name {
+    padding: 10px;
+}
+
+.message {
+    padding: 10px;
+}
+
+.dialogs a{
+    text-decoration: none;
+    color: #000;
+}
+
+.dialogs .active a{
+    color: #580ead;
+    text-shadow: 0.5px 0.5px #000;
+    font-weight: 900;
+}
+.name:hover {
+    background-color:#580ead;
+    border-radius: 15px;
+}
+
+.name:hover a{
+    color: #fff;
+}
