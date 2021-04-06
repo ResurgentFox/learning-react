@@ -9,7 +9,7 @@ export const Post = (props) => (
     </div>
 
     <div className={styles.flex}>
-      {props.likes}
+      {props.likesCount}
       <div className={styles.like}>Likes</div>
       <div className={styles.reply}>{props.reply}</div>
     </div>
