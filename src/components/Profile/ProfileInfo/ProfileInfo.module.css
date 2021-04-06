@@ -1,0 +1,32 @@
+.userInfo {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "f f f"
+                         "j k k";
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 3fr 12fr;
+    grid-gap: 10px;
+}
+
+.userWallpaper {
+    grid-area: f;
+}
+
+.moutainWallpaper {
+    height: 200%;
+    width: 100%;
+    object-fit: cover;
+}
+.userAnnPhoto {
+    grid-area: j;
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 30px;
+    object-fit: cover;
+}
+
+.userDescription {
+    grid-area: k;
+}
