@@ -8,18 +8,24 @@ import { Music } from "./components/Music/Music";
 import { Settings } from "./components/Settings/Settings";
 import { BrowserRouter, Route } from "react-router-dom";
 
-export const App = () => (
-  <BrowserRouter>
-    <div className="app-wrapper">
-      <Header />
-      <Navbar />
-      <div className="app-wrapper-content">
-        <Route path="/profile" component={Profile} />
-        <Route path="/dialogs" component={Dialogs} />
-        <Route path="/news" component={News} />
-        <Route path="/music" component={Music} />
-        <Route path="/settings" component={Settings} />
+export const App = (props) => {
+  const { dialogs, messages } = props.data;
+  return (
+    <BrowserRouter>
+      <div className="app-wrapper">
+        <Header />
+        <Navbar />
+        <div className="app-wrapper-content">
+          <Route path="/profile" render={() => <Profile />} />
+          <Route
+            path="/dialogs"
+            render={() => <Dialogs dialogs={dialogs} messages={messages} />}
+          />
+          <Route path="/news" render={() => <News />} />
+          <Route path="/music" render={() => <Music />} />
+          <Route path="/settings" render={() => <Settings />} />
+        </div>
       </div>
-    </div>
-  </BrowserRouter>
-);
+    </BrowserRouter>
+  );
+};
