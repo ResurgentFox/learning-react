@@ -3,18 +3,8 @@ import styles from "./Posts.module.css";
 import emoji from "./emoji/emoji.png";
 import { Post } from "./Post/Post";
 
-export const Posts = () => {
-  const postsData = [
-    { id: 1, reply: "Reply", message: "Hey there! What`s up?", likesCount: 15 },
-    {
-      id: 2,
-      reply: "Reply",
-      message: "This is my first props:3",
-      likesCount: 42,
-    },
-  ];
-
-  const postsElements = postsData.map((posts) => (
+export const Posts = (props) => {
+  const postsElements = props.posts.map((posts) => (
     <Post
       id={posts.id}
       reply={posts.reply}
