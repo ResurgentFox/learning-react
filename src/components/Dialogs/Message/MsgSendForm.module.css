@@ -1,0 +1,49 @@
+.avatar {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #580ead;
+    border-radius: 50%;
+}
+
+.post {
+    display: flex;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 15px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #000;
+    font-size: 16px;
+    font-weight: 900;
+    border: none;
+    outline: transparent;
+}
+
+.text {
+    border-radius: 20px;
+    padding: 10px;
+    outline: transparent;
+}
+
+.emoji {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.flex {
+    max-width: 100%;
+    width: 400px;
+    display: flex;
+    justify-content: end;
+}
+
+.sendMessage {
+    width: 800px;
+    max-width: 100%;
+}
