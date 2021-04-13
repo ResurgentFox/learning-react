@@ -2,11 +2,37 @@
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
-
+.friendsList {
+    display: flex;
+    flex-direction: row;
+}
+.avaFriend {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #6c6c6c;
+    border-radius: 50%;
+}
 .name {
     padding: 10px;
 }
-
+.name::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #00FF00;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 9px;
+}
+.time {
+    margin: 10px;
+    color: #6c6c6c;
+    font-weight: 300;
+    font-size: 10px;
+    padding: 5px;
+}
 .message {
     padding: 10px;
 }
@@ -20,12 +46,4 @@
     color: #580ead;
     text-shadow: 0.5px 0.5px #000;
     font-weight: 900;
-}
-.name:hover {
-    background-color:#580ead;
-    border-radius: 15px;
-}
-
-.name:hover a{
-    color: #fff;
 }
