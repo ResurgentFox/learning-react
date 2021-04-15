@@ -13,6 +13,14 @@ export const Posts = (props) => {
     />
   ));
 
+  // create link on element in virtual DOM
+  const newElementRef = React.createRef();
+  
+  const addPost = () => {
+    const text = newElementRef.current.value;
+    props.addPost(text);
+  };
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -20,12 +28,13 @@ export const Posts = (props) => {
         <div className={styles.post}>
           <div className={styles.avatar}></div>
           <textarea
+            ref={newElementRef}
             method={"POST"}
             cols={40}
             rows={1}
             className={styles.text}
           />
-          <button className={styles.button}>POST</button>
+          <button onClick={addPost} className={styles.button}>SEND</button>
         </div>
       </div>
 

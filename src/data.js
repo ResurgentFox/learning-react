@@ -38,3 +38,10 @@ export const data = {
     },
   ],
 };
+
+export const addPost = (postMessage) => {
+  const newPost = {
+    id: 5, message: postMessage, likesCount: 0, reply: "Reply",
+  };
+  data.posts.push(newPost);
+};

@@ -31,11 +31,13 @@
     font-size: 16px;
     font-weight: 900;
     border: none;
+    outline: transparent;
 }
 
 .text {
     border-radius: 20px;
     padding: 10px;
+    outline: transparent;
 }
 
 .container {
