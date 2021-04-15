@@ -16,32 +16,42 @@ export const data = {
     { id: 5, message: "Yea, thanks:3 It will be great!" },
   ],
 
-  posts: [
-    { id: 1, reply: "Reply", message: "Hey there! What`s up?", likesCount: 15 },
-    {
-      id: 2,
-      reply: "Reply",
-      message: "This is my first props:3",
-      likesCount: 42,
-    },
-    {
-      id: 3,
-      reply: "Reply",
-      message: "Let`s learn React together;)",
-      likesCount: 30,
-    },
-    {
-      id: 4,
-      reply: "Reply",
-      message: "Hey! Is there are someone who wants coffee?",
-      likesCount: 23,
-    },
-  ],
-};
+  posts: {
+    data: [
+      {
+        id: 1,
+        reply: "Reply",
+        message: "Hey there! What`s up?",
+        likesCount: 15,
+      },
+      {
+        id: 2,
+        reply: "Reply",
+        message: "This is my first props:3",
+        likesCount: 42,
+      },
+      {
+        id: 3,
+        reply: "Reply",
+        message: "Let`s learn React together;)",
+        likesCount: 30,
+      },
+      {
+        id: 4,
+        reply: "Reply",
+        message: "Hey! Is there are someone who wants coffee?",
+        likesCount: 23,
+      },
+    ],
 
-export const addPost = (postMessage) => {
-  const newPost = {
-    id: 5, message: postMessage, likesCount: 0, reply: "Reply",
-  };
-  data.posts.push(newPost);
+    addPost: function (postMessage) {
+      const newPost = {
+        id: this.data.length + 1,
+        message: postMessage,
+        likesCount: 0,
+        reply: "Reply",
+      };
+      this.data.push(newPost);
+    },
+  },
 };
