@@ -58,7 +58,8 @@ export class Posts extends React.Component {
             <button
               onClick={() => {
                 this.addPost(newElementRef.current.value);
-              }}
+                newElementRef.current.value = "";
+              }}  
               className={styles.button}
             >
               SEND
