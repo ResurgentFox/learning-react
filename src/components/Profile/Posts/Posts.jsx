@@ -34,11 +34,14 @@ export class Posts extends React.Component {
   render() {
     const newElementRef = React.createRef();
     const postsElements = this.state.posts.data.map((post) => (
-      <Post
+      <Post 
         id={post.id}
         reply={post.reply}
         message={post.message}
         likesCount={post.likesCount}
+        doToggleLike={() => {
+          const postId = post.id;
+          this.state.posts.toggleLike(postId); }}
       />
     ));
 

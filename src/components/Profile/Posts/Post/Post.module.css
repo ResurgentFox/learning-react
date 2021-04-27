@@ -28,6 +28,7 @@
     border-radius: 15px;
     text-align: center;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .reply {
@@ -39,4 +40,5 @@
     text-align: center;
     color: #fff;
     font-weight: 700;
+    cursor: pointer;
 }

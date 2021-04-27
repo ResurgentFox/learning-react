@@ -49,9 +49,23 @@ export const data = {
         id: this.data.length + 1,
         message: postMessage,
         likesCount: 0,
-        reply: "Reply",
+        like: false,
       };
       this.data.push(newPost);
+    },
+
+    toggleLike: function (id) {
+      this.data
+        .filter((x) => x.id === id)
+        .forEach((x) => {
+          if (x.like === true) {
+            x.like = false;
+            x.likesCount--;
+          } else {
+            x.like = true;
+            x.likesCount++;
+          }
+        });
     },
   },
 };
